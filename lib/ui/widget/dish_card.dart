@@ -30,7 +30,7 @@ class DishCard extends StatelessWidget {
               width: this.width,
               height: getHeight(this.width, "4:3"),
               child: ClipRRect(
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(10),
                     topRight: Radius.circular(10)),
                 child: Image.network(
@@ -47,38 +47,38 @@ class DishCard extends StatelessWidget {
                   dish["name"] ?? "",
                   overflow: TextOverflow.ellipsis,
                    style: GoogleFonts.recursive(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                       color: textBlack,
                       fontSize: titleFontSize,
                       fontWeight: FontWeight.bold),
                  ) ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   "By " + dish["store"],
                   overflow: TextOverflow.ellipsis,
                    style: GoogleFonts.recursive(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                     color: grey,
                     fontSize: subTitleFontSize,
                     fontWeight: FontWeight.w300,
                     ) ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     getSvgIcon("clock_icon.svg"),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
                     Text(
                       "Est: " + dish["delivery_time"],
                        style: GoogleFonts.recursive(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                           color: primary,
                           fontSize: hintTextFontSize,
                           fontWeight: FontWeight.bold),

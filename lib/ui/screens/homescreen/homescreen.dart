@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             getSvgIcon(storeTypes[index]['image']),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
                             Text(
@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Container(
               width: double.infinity,
-              decoration: BoxDecoration(color: light),
+              decoration: const BoxDecoration(color: light),
               child: Padding(
                 padding: const EdgeInsets.only(
                     top: topMainPadding, bottom: bottomMainPadding),
@@ -96,13 +96,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Text(
                         "Special Offers",
                         style: GoogleFonts.recursive(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                           fontSize: titleFontSize,
                           fontWeight: FontWeight.bold,
                         )),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     SingleChildScrollView(
@@ -172,13 +172,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Text(
                         "Recommeded Dishes",
                         style: GoogleFonts.recursive(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                           fontSize: titleFontSize,
                           fontWeight: FontWeight.bold,
                         )),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     SingleChildScrollView(

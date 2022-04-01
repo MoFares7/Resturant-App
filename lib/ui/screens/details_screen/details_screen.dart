@@ -31,7 +31,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Column(
@@ -39,10 +39,10 @@ class _DetailsScreenState extends State<DetailsScreen> {
                 children: [
                   Text("Top Menu",
                       style: GoogleFonts.recursive(
-                        textStyle: TextStyle(
+                        textStyle: const TextStyle(
                             fontSize: 22, fontWeight: FontWeight.bold),
                       )),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Text("Most ordered right now",
@@ -52,7 +52,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                       )),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Column(
@@ -74,7 +74,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                                 children: [
                                   Text(productItems[index]['name'],
                                       style: GoogleFonts.recursive(
-                                        textStyle: TextStyle(
+                                        textStyle: const TextStyle(
                                             fontSize: 16,
                                             fontWeight: FontWeight.bold),
                                       )),
@@ -82,15 +82,15 @@ class _DetailsScreenState extends State<DetailsScreen> {
                                     children: [
                                       Text(
                                         productItems[index]['price'],
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                             color: textBlack, fontSize: 16),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 8,
                                       ),
                                       Text(productItems[index]['discount'],
                                           style: GoogleFonts.recursive(
-                                            textStyle: TextStyle(
+                                            textStyle: const TextStyle(
                                                 decoration:
                                                     TextDecoration.lineThrough,
                                                 color: textBlack,
@@ -117,10 +117,10 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           ],
                         ),
                       ),
-                      Divider(
+                      const Divider(
                         thickness: 0.8,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 15,
                       ),
                     ],
@@ -166,7 +166,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                       child: Center(
                         child: Text("2",
                             style: GoogleFonts.recursive(
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
                                   color: textWhite),
@@ -176,14 +176,14 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   ),
                   Text("View your cart",
                       style: GoogleFonts.recursive(
-                        textStyle: TextStyle(
+                        textStyle: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                             color: textWhite),
                       )),
                   Text("\$ 3.98",
                       style: GoogleFonts.recursive(
-                        textStyle: TextStyle(
+                        textStyle: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                             color: textWhite),
@@ -228,13 +228,13 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
                   child: Text(widget.name,
                       style: GoogleFonts.recursive(
-                        textStyle: TextStyle(
+                        textStyle: const TextStyle(
                             color: textWhite,
                             fontSize: 25,
                             fontWeight: FontWeight.bold),
                       )),
                 )),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Container(
@@ -245,14 +245,14 @@ class _DetailsScreenState extends State<DetailsScreen> {
                     padding: const EdgeInsets.all(10.0),
                     child: Text('Delivery 10 Min',
                         style: GoogleFonts.recursive(
-                          textStyle: TextStyle(
+                          textStyle: const TextStyle(
                               fontSize: 16,
                               color: textWhite,
                               fontWeight: FontWeight.bold),
                         )),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
               ],

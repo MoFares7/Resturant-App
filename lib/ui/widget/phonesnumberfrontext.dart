@@ -30,12 +30,12 @@ class TextFormNumber extends StatelessWidget {
         }
       },
       keyboardType: TextInputType.emailAddress,
-      autofillHints: [AutofillHints.telephoneNumber],
+      autofillHints: const [AutofillHints.telephoneNumber],
       decoration: InputDecoration(
           filled: true,
           fillColor: textFieldBg,
           prefixIcon: Padding(
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
               left: leftMainPadding,
               right: rightMainPadding * 0.75,
             ),

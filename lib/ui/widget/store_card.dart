@@ -30,7 +30,7 @@ class StoreCard extends StatelessWidget {
               width: this.width,
               height: 100,
               child: ClipRRect(
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(10),
                     topRight: Radius.circular(10)),
                 child: Image.network(
@@ -39,7 +39,7 @@ class StoreCard extends StatelessWidget {
                 ),
               )),
           Container(
-            padding: EdgeInsets.all(15),
+            padding: const EdgeInsets.all(15),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -52,45 +52,45 @@ class StoreCard extends StatelessWidget {
                     fontSize: subTitleFontSize,
                   ),
                  ) ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   store["name"] ?? "",
                   overflow: TextOverflow.ellipsis,
                    style: GoogleFonts.recursive(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                       color: textBlack,
                       fontSize: titleFontSize,
                       fontWeight: FontWeight.bold),
                  ) ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   store["tags"] ?? "",
                   overflow: TextOverflow.ellipsis,
                    style: GoogleFonts.recursive(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                     color: grey,
                     fontSize: subTitleFontSize,
                     fontWeight: FontWeight.w300,
                     ), ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     getSvgIcon("clock_icon.svg"),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
                     Text(
                       "Est: " + store["delivery_time"],
                        style: GoogleFonts.recursive(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                           color: primary,
                           fontSize: hintTextFontSize,
                           fontWeight: FontWeight.bold),

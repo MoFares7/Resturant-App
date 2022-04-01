@@ -39,12 +39,12 @@ class MainAppBar extends StatelessWidget {
                       children: [
                         Text("Delivery Details",
                             style: GoogleFonts.recursive(
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                   color: textBlack,
                                   fontSize: titleFontSize,
                                   fontWeight: FontWeight.bold),
                             )),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         getSvgIcon("arrow_right_icon.svg"),
@@ -54,7 +54,7 @@ class MainAppBar extends StatelessWidget {
                       children: [
                         //  getSvgIcon("search_icon.svg"),
                         IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         IconButton(
@@ -62,11 +62,11 @@ class MainAppBar extends StatelessWidget {
                               Navigator.pushNamed(context, "/checkout");
                             },
                             icon: Badge(
-                              badgeContent: Text(
+                              badgeContent: const Text(
                                 '2',
                                 style: TextStyle(color: textWhite),
                               ),
-                              child: Icon(
+                              child: const Icon(
                                 EvilIcons.cart,
                                 size: 30,
                               ),
@@ -78,7 +78,7 @@ class MainAppBar extends StatelessWidget {
                 SizedBox(
                   width:
                       (size.width - (leftMainPadding + rightMainPadding + 60)),
-                  child: Text(
+                  child: const Text(
                     "",
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
